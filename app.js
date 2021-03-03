@@ -144,6 +144,7 @@ async function addEmployees() {
 			{
 				name: "choice",
 				type: "rawlist",
+				message: "What is the new employee's title?",
 				choices: () => {
 					let roleArr = [];
 					for (let i = 0; i < addRol.length; i++) {
@@ -151,7 +152,6 @@ async function addEmployees() {
 					}
 					return roleArr;
 				},
-				message: "What is the new employee's title?"
 			},
 			{
 				name: "empManager",
